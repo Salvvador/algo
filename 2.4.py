@@ -1,3 +1,9 @@
+'''
+Let A[1..n] be an array of n distinct numbers. If i<j and A[i]>A[j], then the pair (i,j) is called an inversion of A.
+Give an algorithm that determines the number of inversions in any permutation of n elements in Θ(nlgn) worst-case time.
+'''
+
+
 import math
 
 

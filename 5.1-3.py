@@ -32,7 +32,8 @@ for i in range(10000):
         number_of_zeroes += 1
     else:
         number_of_ones += 1
-print("for p = 0.6 biased_random created value of {}".format(number_of_zeroes / (number_of_ones + number_of_zeroes)))
+print("after running biased_random with target_p = 0.6 we received actual_p = {}"
+      .format(number_of_zeroes / (number_of_ones + number_of_zeroes)))
 
 number_of_zeroes = 0
 number_of_ones = 0
@@ -41,7 +42,8 @@ for i in range(10000):
         number_of_zeroes += 1
     else:
         number_of_ones += 1
-print("for p = 0.1 biased_random created value of {}".format(number_of_zeroes / (number_of_ones + number_of_zeroes)))
+print("after running biased_random with target_p = 0.1 we received actual_p = {}"
+      .format(number_of_zeroes / (number_of_ones + number_of_zeroes)))
 
 
 number_of_zeroes = 0
@@ -51,7 +53,7 @@ for i in range(10000):
         number_of_zeroes += 1
     else:
         number_of_ones += 1
-print("for p = 0.6 unbiased_random_using_biased_random created value of {}"
+print("after running unbiased_random_using_biased_random with target_p = 0.6 we received actual_p = {}"
       .format(number_of_zeroes / (number_of_ones + number_of_zeroes)))
 
 number_of_zeroes = 0
@@ -61,5 +63,5 @@ for i in range(10000):
         number_of_zeroes += 1
     else:
         number_of_ones += 1
-print("for p = 0.1 unbiased_random_using_biased_random created value of {}"
+print("after running unbiased_random_using_biased_random with target_p = 0.1 we received actual_p = {}"
       .format(number_of_zeroes / (number_of_ones + number_of_zeroes)))

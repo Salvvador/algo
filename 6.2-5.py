@@ -8,7 +8,7 @@ import math
 
 
 def max_heapify_iterative(arr, i):
-    while i <= math.ceil(len(arr) / 2):
+    while i <= math.floor(len(arr) / 2):
         left = i * 2 + 1
         right = i * 2 + 2
         highest = i

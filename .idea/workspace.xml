@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="407f900e-51da-47be-a446-466f36633661" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/6.5-3.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/6.5-6.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/priorityqueue.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -21,12 +22,6 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-  </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="67" />
-    <option name="y" value="25" />
-    <option name="width" value="1853" />
-    <option name="height" value="1055" />
   </component>
   <component name="ProjectId" id="1OkXaePXRBUMoHS7yqUYPkhsMto" />
   <component name="PropertiesComponent">
@@ -86,7 +81,8 @@
       <workItem from="1562437287657" duration="3869000" />
       <workItem from="1563036608606" duration="8501000" />
       <workItem from="1564522652227" duration="4018000" />
-      <workItem from="1564663123830" duration="8471000" />
+      <workItem from="1564663123830" duration="9063000" />
+      <workItem from="1565014913185" duration="5178000" />
     </task>
     <servers />
   </component>

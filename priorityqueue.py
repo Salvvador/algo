@@ -1,7 +1,10 @@
 import math
 
+
 class SimplePriorityQueue:
-    def __init__(self, arr):
+    def __init__(self, arr=None):
+        if arr is None:
+            arr = []
         self.arr = arr
         self.build_max_heap()
 
@@ -52,22 +55,23 @@ class SimplePriorityQueue:
         self.increase_key(len(self.arr) - 1, new_value)
 
 
-test_arr = [5, 1, 3, 10, 2, 7, 0]
+if __name__ == '__main__':
+    test_arr = [5, 1, 3, 10, 2, 7, 0]
 
-priority_queue = SimplePriorityQueue(test_arr)
-priority_queue.print_queue()  # expected 10, 5, 7, 1, 2, 3, 0
+    priority_queue = SimplePriorityQueue(test_arr)
+    priority_queue.print_queue()  # expected 10, 5, 7, 1, 2, 3, 0
 
-print(priority_queue.heap_maximum())  # expected 10
-priority_queue.print_queue()  # expected 10, 5, 7, 1, 2, 3, 0
+    print(priority_queue.heap_maximum())  # expected 10
+    priority_queue.print_queue()  # expected 10, 5, 7, 1, 2, 3, 0
 
-print(priority_queue.extract_max())  # expected 10
-priority_queue.print_queue()  # expected 5, 7, 1, 2, 3, 0
+    print(priority_queue.extract_max())  # expected 10
+    priority_queue.print_queue()  # expected 5, 7, 1, 2, 3, 0
 
-priority_queue.increase_key(3, 10)
-priority_queue.print_queue()  # expected 10, 7, 3, 5, 2, 0
+    priority_queue.increase_key(3, 10)
+    priority_queue.print_queue()  # expected 10, 7, 3, 5, 2, 0
 
-priority_queue.insert(6)
-priority_queue.print_queue()  # expected 10, 7, 6, 5, 2, 0, 3
+    priority_queue.insert(6)
+    priority_queue.print_queue()  # expected 10, 7, 6, 5, 2, 0, 3
 
-priority_queue.insert(16)
-priority_queue.print_queue()  # expected 16, 10, 6, 7, 2, 0, 3, 5
+    priority_queue.insert(16)
+    priority_queue.print_queue()  # expected 16, 10, 6, 7, 2, 0, 3, 5

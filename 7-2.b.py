@@ -1,17 +1,17 @@
 def partition_with_repetitions(arr, left, right):
     pivot = arr[right]
     j = left
-    number_of_eq_values = 0
     for i in range(left, right):
-        if arr[i] == pivot:
-            arr[i], arr[number_of_eq_values + j] = arr[number_of_eq_values + j], arr[i]
-            number_of_eq_values += 1
         if arr[i] < pivot:
-            arr[j], arr[number_of_eq_values + j] = arr[number_of_eq_values + j], arr[j]
             arr[i], arr[j] = arr[j], arr[i]
             j += 1
-    arr[right], arr[number_of_eq_values + j] = arr[number_of_eq_values + j], arr[right]
-    return j, j + number_of_eq_values
+    k = j
+    for i in range(j, right):
+        if arr[i] == pivot:
+            arr[i], arr[k] = arr[k], arr[i]
+            k += 1
+    arr[right], arr[k] = arr[k], arr[right]
+    return j, k
 
 
 arr1 = [3, 43, 12, 12, 1, 32, 11, 11, 3, 4, 12]

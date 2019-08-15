@@ -1,11 +1,11 @@
-def quickSort(arr, left=0, right=None):
+def quick_sort(arr, left=0, right=None):
     if right is None:
         right = len(arr) - 1
     if left >= right:
         return arr
     p = partition(arr, left, right)
-    quickSort(arr, left, p - 1)
-    quickSort(arr, p + 1, right)
+    quick_sort(arr, left, p - 1)
+    quick_sort(arr, p + 1, right)
     return arr
 
 
@@ -24,6 +24,6 @@ arr1 = [3, 12, 43, 1, 32, 11, 11, 3, 4, 12]
 arr2 = [4]
 arr3 = [5, 4, 3, 2, 1]
 
-print(quickSort(arr1))
-print(quickSort(arr2))
-print(quickSort(arr3))
+print(quick_sort(arr1))
+print(quick_sort(arr2))
+print(quick_sort(arr3))

@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="407f900e-51da-47be-a446-466f36633661" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/8.2-4.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rodcutting.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -133,7 +133,15 @@
       <workItem from="1564663123830" duration="9063000" />
       <workItem from="1565014913185" duration="18318000" />
       <workItem from="1565883522863" duration="15225000" />
-      <workItem from="1567170952637" duration="4944000" />
+      <workItem from="1567170952637" duration="5547000" />
+      <workItem from="1567531757152" duration="7000" />
+      <workItem from="1567708044119" duration="9000" />
+      <workItem from="1570114490122" duration="6000" />
+      <workItem from="1570120518219" duration="746000" />
+      <workItem from="1570131334106" duration="43000" />
+      <workItem from="1571248496490" duration="13000" />
+      <workItem from="1572374479249" duration="6000" />
+      <workItem from="1572883675098" duration="1576000" />
     </task>
     <servers />
   </component>

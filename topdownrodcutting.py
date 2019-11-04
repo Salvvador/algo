@@ -1,5 +1,5 @@
 def top_down_rod_cutting(prices, length):
-    mem_table = [0] * 10
+    mem_table = [0] * length
     return top_down_rod_cutting_rec(prices, length, mem_table)
 
 
@@ -15,14 +15,11 @@ def top_down_rod_cutting_rec(prices, length, mem_table):
     return highest
 
 
-prices = [1, 5, 8, 9, 10, 17, 17, 20, 24, 30]
-print(top_down_rod_cutting(prices, 1))  # expected: 1
+t_prices = [1, 5, 8, 9, 10, 17, 17, 20, 24, 30]
+print(top_down_rod_cutting(t_prices, 1))  # expected: 1
 
-prices = [1, 5, 8, 9, 10, 17, 17, 20, 24, 30]
-print(top_down_rod_cutting(prices, 2))  # expected: 5
+print(top_down_rod_cutting(t_prices, 2))  # expected: 5
 
-prices = [1, 5, 8, 9, 10, 17, 17, 20, 24, 30]
-print(top_down_rod_cutting(prices, 4))  # expected: 10
+print(top_down_rod_cutting(t_prices, 4))  # expected: 10
 
-prices = [1, 5, 8, 9, 10, 17, 17, 20, 24, 30]
-print(top_down_rod_cutting(prices, 9))  # expected: 10
+print(top_down_rod_cutting(t_prices, 9))  # expected: 25
